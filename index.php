@@ -1,6 +1,6 @@
 <!--connect file-->
 <?php   
-;
+
 include ('pages/includes/connect.php');
 include('pages/Function/common_function.php');
 session_start();
@@ -62,7 +62,7 @@ session_start();
           </li>";
          }else{
           echo"<li class='nav-item'>
-          <a class='nav-link' href='./users_area/user_registration.php'>Register</a>
+           <a class='nav-link' href='./pages/user_area/user_registration.php'>Register</a>
           </li>";
 
          }
@@ -99,20 +99,20 @@ session_start();
           <?php 
           if(!isset($_SESSION['username'])){
             echo " <li class='nav-item'>
-            <a class='nav-link' href='#'>Welcome Guest</a>
+            <a class='nav-link' href='#'> Welcome, Guest</a>
             </li>";   
           }else{
             echo "<li class='nav-item'>
-            <a class='nav-link'#'>Welcome ".$_SESSION['username']."</a>
+            <a class='nav-link' # '>Welcome ".$_SESSION['username']."</a>
            </li>";
           }
      if(!isset($_SESSION['username'])){
       echo " <li class='nav-item'>
-      <a class='nav-link' href='./users_area/user_login.php'>Login</a>
+      <a class='nav-link' href='./pages/user_area/user_login.php'>Login</a>
       </li>";   
     }else{
       echo "<li class='nav-item'>
-      <a class='nav-link' href='./users_area/logout.php'>Logout</a>
+      <a class='nav-link' href='./pages/user_area/logout.php'>Logout</a>
      </li>";
     }
   
@@ -232,14 +232,15 @@ session_start();
        </div>
       </div>
      </div>
-    </div>
+<!--    </div>-->
 
 
 <!--last child-->
 <!--include footer-->
 
-<!--<?php include("./includes/footer.php") ?> -->
-      </div>
+<!--<?php include("./pages/includes/footer.php") ?> -->
+
+<!--      </div>-->
 
 
 
